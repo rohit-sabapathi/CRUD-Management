@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/CRUD-Management/static/css/main.ff02f4b5.css",
-    "main.js": "/CRUD-Management/static/js/main.1e8c99c2.js",
+    "main.js": "/CRUD-Management/static/js/main.47befeb8.js",
     "static/js/453.59af2fa3.chunk.js": "/CRUD-Management/static/js/453.59af2fa3.chunk.js",
     "index.html": "/CRUD-Management/index.html",
     "main.ff02f4b5.css.map": "/CRUD-Management/static/css/main.ff02f4b5.css.map",
-    "main.1e8c99c2.js.map": "/CRUD-Management/static/js/main.1e8c99c2.js.map",
+    "main.47befeb8.js.map": "/CRUD-Management/static/js/main.47befeb8.js.map",
     "453.59af2fa3.chunk.js.map": "/CRUD-Management/static/js/453.59af2fa3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ff02f4b5.css",
-    "static/js/main.1e8c99c2.js"
+    "static/js/main.47befeb8.js"
   ]
 }
