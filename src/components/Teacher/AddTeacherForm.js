@@ -10,7 +10,7 @@ function AddTeacherForm ({ addTeacher }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         addTeacher({ firstName, lastName, email });
-        navigate('/teachers');
+        navigate('/CRUD-Management/teachers');
     };
 
     return (

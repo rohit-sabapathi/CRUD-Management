@@ -12,7 +12,7 @@ function AddStudentForm ({ addStudent }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         addStudent({ firstName, lastName, email });
-        navigate('/students');
+        navigate('/CRUD-Management/students');
     };
 
     return (

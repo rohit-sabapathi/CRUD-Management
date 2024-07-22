@@ -47,27 +47,27 @@ const App = () => {
                     <div className='container nav'>
                         <ul className='nav nav-tabs'>
                             <li className='nav-item'>
-                            <Link className='nav-link active' to="/">Management System</Link>
+                            <Link className='nav-link active' to="/CRUD-Management/">Management System</Link>
                             </li>
                             <li className='nav-item'>
-                                <Link className='nav-link ' to="/students">Student Management</Link>
+                                <Link className='nav-link ' to="/CRUD-Management/students">Student Management</Link>
                             </li>
                             <li className='nav-item'>
-                                <Link className='nav-link' to="/teachers">Teacher Management</Link>
+                                <Link className='nav-link' to="/CRUD-Management/teachers">Teacher Management</Link>
                             </li>
                         </ul>
                     </div>
                 </nav>
                 <Routes>
-                    <Route path="/" element={<StudentList students={students} deleteStudent={deleteStudent} />} />
-                    <Route path="/students" element={<StudentList students={students} deleteStudent={deleteStudent} />} />
-                    <Route path="/add-student" element={<AddStudentForm addStudent={addStudent} />} />
-                    <Route path="/edit-student/:id" element={<UpdateStudent students={students} updateStudent={updateStudent} />} />
+                    <Route path="/CRUD-Management/" element={<StudentList students={students} deleteStudent={deleteStudent} />} />
+                    <Route path="/CRUD-Management/students" element={<StudentList students={students} deleteStudent={deleteStudent} />} />
+                    <Route path="/CRUD-Management/add-student" element={<AddStudentForm addStudent={addStudent} />} />
+                    <Route path="/CRUD-Management/edit-student/:id" element={<UpdateStudent students={students} updateStudent={updateStudent} />} />
                 </Routes>
                 <Routes>
-                    <Route path="/teachers" element={<TeacherList teachers={teachers} deleteTeacher={deleteTeacher} />} />
-                    <Route path="/add-teacher" element={<AddTeacherForm addTeacher={addTeacher} />} />
-                    <Route path="/edit-teacher/:id" element={<UpdateTeacher teachers={teachers} updateTeacher={updateTeacher} />} />
+                    <Route path="/CRUD-Management/teachers" element={<TeacherList teachers={teachers} deleteTeacher={deleteTeacher} />} />
+                    <Route path="/CRUD-Management/add-teacher" element={<AddTeacherForm addTeacher={addTeacher} />} />
+                    <Route path="/CRUD-Management/edit-teacher/:id" element={<UpdateTeacher teachers={teachers} updateTeacher={updateTeacher} />} />
                 </Routes>
             </div>
         </Router>

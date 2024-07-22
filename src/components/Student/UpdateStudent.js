@@ -11,14 +11,14 @@ function UpdateStudent({ students, updateStudent }) {
 
   useEffect(() => {
     if (!student) {
-      navigate('/students');
+      navigate('/CRUD-Management/students');
     }
   }, [student, navigate]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     updateStudent({ id: parseInt(id), firstName, lastName, email });
-    navigate('/students');
+    navigate('/CRUD-Management/students');
   };
 
   return (
