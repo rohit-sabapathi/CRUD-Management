@@ -5,7 +5,7 @@ function TeacherList({ teachers, deleteTeacher }) {
     return (
         <div>
             <h2 className='mt-3'>List of Teachers</h2>
-            <Link to="/add-teacher" className='btn btn-primary mb-3 mt-3'>Add Teacher</Link>
+            <Link to="/CRUD-Management/add-teacher" className='btn btn-primary mb-3 mt-3'>Add Teacher</Link>
             <table className='table'>
                 <thead>
                     <tr className='table-dark'>
@@ -22,7 +22,7 @@ function TeacherList({ teachers, deleteTeacher }) {
                             <td>{teacher.lastName}</td>
                             <td>{teacher.email}</td>
                             <td>
-                                <Link to={`/edit-teacher/${teacher.id}`}><button className='btn btn-outline-info me-2'>Update</button></Link>
+                                <Link to={`/CRUD-Management/edit-teacher/${teacher.id}`}><button className='btn btn-outline-info me-2'>Update</button></Link>
                                 <button className="btn btn-outline-danger" onClick={() => deleteTeacher(teacher.id)}>Delete</button>
                             </td>
                         </tr>
