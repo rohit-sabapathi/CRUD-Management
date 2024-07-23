@@ -59,7 +59,7 @@ const App = () => {
                     </div>
                 </nav>
                 <Routes>
-                    <Route path="/CRUD-Management/" element={<StudentList students={students} deleteStudent={deleteStudent} />} />
+                    <Route path="/CRUD-Management/" element={<StudentList students={students} deleteStudent={deleteStudent}  exact />} />
                     <Route path="/CRUD-Management/students" element={<StudentList students={students} deleteStudent={deleteStudent} />} />
                     <Route path="/CRUD-Management/add-student" element={<AddStudentForm addStudent={addStudent} />} />
                     <Route path="/CRUD-Management/edit-student/:id" element={<UpdateStudent students={students} updateStudent={updateStudent} />} />
