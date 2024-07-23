@@ -38,7 +38,6 @@ function AddTeacherForm ({ addTeacher }) {
                         placeholder="Enter the Last Name of the Teacher"
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
-                        required
                     />
                 </div>
                 <div className='mb-3'>

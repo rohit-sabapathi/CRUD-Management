@@ -46,7 +46,6 @@ function UpdateTeacher({ teachers, updateTeacher }) {
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             placeholder="Enter the Teacher's Last Name"
-            required
           />
         </div>
         <div className="mb-3">
